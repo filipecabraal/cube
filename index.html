@@ -26,7 +26,8 @@
 			width: 6px;
 			height: 0px;
 
-			transition: 0.7s;			
+			transition: 0.7s;
+			-moz-transition: 0.7s;			
 		}
 
 		.x::before {
@@ -38,7 +39,8 @@
 			width: 0px;
 			height: 6px;
 
-			transition: 0.7s;			
+			transition: 0.7s;
+			-moz-transition: 0.7s;
 		}
 
 		.y::after {
@@ -47,12 +49,14 @@
 			top: 0;
 			right: 0;
 			transform: rotate(360deg);
+			-moz-transform: rotate(360deg);
 		
 			background-color: #669999;
 			width: 6px;
 			height: 0px;
 			
 			transition: 1s;	
+			-moz-transition: 1s;
 		}
 
 		.y::before {
@@ -60,12 +64,14 @@
 			position: absolute;
 			bottom: 0;
 			transform: rotate(360deg);
+			-moz-transform: rotate(360deg);
 		
 			background-color: #669999;
 			width: 0px;
 			height: 6px;
 			
 			transition: 1s;
+			-moz-transition: 1s;
 		}
 
 		.active::after {
@@ -78,10 +84,12 @@
 
 		.delay::after {
 			transition-delay: 0.7s;
+			-moz-transition-delay: 0.7s;
 		}
 
 		.delay::before {
 			transition-delay: 0.7s;
+			-moz-transition-delay: 0.7s;
 		}
 
 		.img {
@@ -90,11 +98,14 @@
 			opacity: 0;
 
     		transition: 1s;
+			-moz-transition: 1s;
 		}
 
 		.transform {
 			transition-delay: 1s;
+			-moz-transition-delay: 1s;
 			transform: translate(-22px, -17px);
+			-moz-transform: translate(-22px, -17px);
 			opacity: 1;
 			box-shadow: 0px 0px 20px #999;
 		}
@@ -105,6 +116,7 @@
 			right: 0;
 			opacity: 0;
 			transform: translate(13px, 13px);
+			-moz-transform: translate(13px, 13px);
 
 			text-decoration: none;
 			color: #f1f1f1;
@@ -115,15 +127,18 @@
 			padding: 20px 40px;
 
 			transition: 0.8s;
+			-moz-transition: 0.8s;
 		}
 
 		.btn-transform {
 			transform: translate(16px, 16px);
+			-moz-transform: translate(16px, 16px);
 			opacity: 1;
 		}
 
 		.delay {
 			transition-delay: 1.3s;
+			-moz-transition-delay: 1.3s;
 		}
 
 		.button::before {
@@ -137,10 +152,13 @@
 			z-index: -1;
 
 			transition: 1s;
+			-moz-transition: 1s;
+	
 		}
 
 		.btn-before {
 			transform: translate(11px, 11px);
+			-moz-transform: translate(11px, 11px);
 			box-shadow: 0px 0px 30px #999;
 		}
 
